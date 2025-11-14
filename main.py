@@ -21,6 +21,7 @@ def main():
             if event.type == pygame.QUIT:
                 return
         screen.fill("black")
+        spaceship.update(dt)
         spaceship.draw(screen)
         pygame.display.flip()
         Clock.tick(60)
